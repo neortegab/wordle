@@ -21,12 +21,12 @@ class Historial:
     def porcentaje_victorias(self):
         if self.partidas_jugadas > 0:
             return f"{self.partidas_ganadas*100/self.partidas_jugadas}%"
-        return "No se han jugado partidas"
+        return "0"
 
     def porcentaje_derrotas(self):
         if self.partidas_jugadas > 0:
             return f"{self.partidas_perdidas*100/self.partidas_jugadas}%"
-        return "No se han jugado partidas"
+        return "0"
 
     def promedio_intentos_por_partida(self):
         if len(self.intentos_por_partida) == 0:
